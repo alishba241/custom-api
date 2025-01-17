@@ -15,7 +15,7 @@ interface IProducts {
 const products: IProducts[] = [
   
     {
-        product_name: "Trenton modular sofa_3",
+        product_name: "Trenton modular sofa",
         product_description:
             "A modern, versatile modular sofa designed for comfort and style. Its clean lines and customizable layout make it perfect for any living space.",
         price: 25000,
@@ -80,7 +80,7 @@ const products: IProducts[] = [
         id: "6",
     },
     {
-        product_name: "Round Coffee Table_Color 2",
+        product_name: "Round Coffee Table",
         product_description:
             "A round, compact coffee table with a contemporary design. Perfect for small living spaces, offering a stylish and functional centerpiece.",
         price: 251000,
@@ -124,7 +124,7 @@ const products: IProducts[] = [
         id: "10",
     },
     {
-        product_name: "SJP_0825",
+        product_name: "Stylish Wood Chairs",
         product_description:
             "A stylish accent piece designed for a contemporary home, combining comfort and modern aesthetics with luxurious fabric.",
         price: 200000,
