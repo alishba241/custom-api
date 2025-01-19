@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 
-
 interface IProducts {
     product_name: string;
     product_description: string;
@@ -8,7 +7,7 @@ interface IProducts {
     stock: number;
     sizes_available: string[];
     image: string;
-    id: string;
+    id: number;
 }
 
 // API Data
@@ -23,7 +22,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284448/Trenton_modular_sofa_3_1_s5q1vn.png",
-        id: "1",
+        id: 1,
     },
     {
         product_name: "Granite Dining Table with Dining Chair",
@@ -34,7 +33,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284514/Granite_dining_table_with_dining_chair_1_nf4cea.png",
-        id: "2",
+        id: 2,
     },
     {
         product_name: "Outdoor Bar Table and Stool",
@@ -45,7 +44,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284618/Outdoor_bar_table_and_stool_1_twusni.png",
-        id: "3",
+        id: 3,
     },
     {
         product_name: "Plain Console with Teak Mirror",
@@ -55,7 +54,7 @@ const products: IProducts[] = [
         stock: 68,        sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284687/Plain_console_with_teak_mirror_1_hsanoh.png",
-        id: "4",
+        id: 4,
     },
     {
         product_name: "Grain Coffee Table",
@@ -66,7 +65,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284712/Grain_coffee_table_1_fj0cz3.png",
-        id: "5",
+        id: 5,
     },
     {
         product_name: "Kent Coffee Table",
@@ -77,7 +76,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284740/Kent_coffee_table_1_ucncvs.png",
-        id: "6",
+        id: 6,
     },
     {
         product_name: "Round Coffee Table",
@@ -88,7 +87,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284796/Round_coffee_table_color_2_1_uc6dgx.png",
-        id: "7",
+        id: 7,
     },
     {
         product_name: "Reclaimed Teak Coffee Table",
@@ -99,7 +98,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284818/Reclaimed_teak_coffee_table_1_uxitfz.png",
-        id: "8",
+        id: 8,
     },
     {
         product_name: "Plain Console",
@@ -110,7 +109,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284988/Plain_console__1_tmei5n.png",
-        id: "9",
+        id: 9,
     },
     {
         product_name: "Reclaimed Teak Sideboard",
@@ -121,7 +120,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285045/Reclaimed_teak_coffee_table_1_ivjdfk.png",
-        id: "10",
+        id: 10,
     },
     {
         product_name: "Stylish Wood Chairs",
@@ -132,7 +131,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285200/SJP_0825_1_anv8fz.png",
-        id: "11",
+        id: 11,
     },
     {
         product_name: "Bella Chair and Table",
@@ -143,7 +142,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285232/Bella_chair_and_table_1_cm0o4d.png",
-        id: "12",
+        id: 12,
     },
     {
         product_name: "Granite Square Side Table",
@@ -154,7 +153,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285260/Granite_square_side_table_1_kgyc6v.png",
-        id: "13",
+        id: 13,
     },
     {
         product_name: "Asgaard Sofa",
@@ -165,7 +164,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285344/Asgaard_sofa_2_ncg4dz.png",
-        id: "14",
+        id: 14,
     },
     {
         product_name: "Maya Sofa Three Seater",
@@ -176,7 +175,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285373/Maya_sofa_three_seater_1_kxa7xj.png",
-        id: "15",
+        id: 15,
     },
     {
         product_name: "Outdoor Sofa Set",
@@ -187,7 +186,7 @@ const products: IProducts[] = [
         sizes_available: ["L", "XL", "XS"],
         image:
             "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285405/Outdoor_sofa_set_1_g5zrfb.png",
-        id: "16",
+        id: 16,
     },
 ];
 
