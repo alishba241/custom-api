@@ -9,6 +9,8 @@ interface IProducts {
     image: string;
     id: number;
     category: string;
+    tags: string[];
+    price_range: string;
 }
 
 // API Data
@@ -24,6 +26,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284448/Trenton_modular_sofa_3_1_s5q1vn.png",
     id: 1,
     category: "Sofa",
+    tags: ["sofa", "modern", "modular", "comfortable", "living room"],
+    price_range: "20k - 30k",
   },
   {
     product_name: "Granite Dining Table with Dining Chair",
@@ -36,6 +40,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284514/Granite_dining_table_with_dining_chair_1_nf4cea.png",
     id: 2,
     category: "Dinning",
+    tags: ["dining table", "granite", "dining chairs", "formal", "casual"],
+    price_range: "20k - 30k",
   },
   {
     product_name: "Outdoor Bar Table and Stool",
@@ -48,6 +54,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284618/Outdoor_bar_table_and_stool_1_twusni.png",
     id: 3,
     category: "Dinning",
+    tags: ["bar table", "outdoor", "weather-resistant", "entertainment"],
+    price_range: "20k - 30k",
   },
   {
     product_name: "Plain Console with Teak Mirror",
@@ -60,6 +68,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284687/Plain_console_with_teak_mirror_1_hsanoh.png",
     id: 4,
     category: "Table",
+    tags: ["console table", "teak mirror", "minimalistic", "entryway"],
+    price_range: "20k - 30k",
   },
   {
     product_name: "Grain Coffee Table",
@@ -72,6 +82,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284712/Grain_coffee_table_1_fj0cz3.png",
     id: 5,
     category: "Table",
+    tags: ["coffee table", "wood grain", "natural", "living room"],
+    price_range: "10k - 20k",
   },
   {
     product_name: "Kent Coffee Table",
@@ -84,6 +96,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284740/Kent_coffee_table_1_ucncvs.png",
     id: 6,
     category: "Table",
+    tags: ["coffee table", "glass top", "metallic frame", "elegant"],
+    price_range: "70k and above",
   },
   {
     product_name: "Round Coffee Table",
@@ -96,6 +110,9 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284796/Round_coffee_table_color_2_1_uc6dgx.png",
     id: 7,
     category: "Table",
+      tags: ["coffee table", "round", "compact", "contemporary"],
+    price_range: "70k and above",
+    
   },
   {
     product_name: "Reclaimed Teak Coffee Table",
@@ -108,6 +125,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284818/Reclaimed_teak_coffee_table_1_uxitfz.png",
     id: 8,
     category: "Table",
+      tags: ["coffee table", "teak wood", "eco-friendly", "rustic"],
+    price_range: "20k - 30k",
   },
   {
     product_name: "Plain Console",
@@ -120,6 +139,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736284988/Plain_console__1_tmei5n.png",
     id: 9,
     category: "Table",
+      tags: ["console table", "minimalist", "functional", "storage"],
+    price_range: "70k and above",
   },
   {
     product_name: "Reclaimed Teak Sideboard",
@@ -132,6 +153,8 @@ const products: IProducts[] = [
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285045/Reclaimed_teak_coffee_table_1_ivjdfk.png",
     id: 10,
     category: "Sideboard",
+      tags: ["sideboard", "teak wood", "rustic", "storage"],
+    price_range: "20k - 30k",
   },
   {
     product_name: "Stylish Wood Chairs",
@@ -142,8 +165,10 @@ const products: IProducts[] = [
     sizes_available: ["L", "XL", "XS"],
     image:
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285200/SJP_0825_1_anv8fz.png",
-      id: 11,
+    id: 11,
     category: "Chair",
+      tags: ["chair", "wood", "modern", "luxury", "accent piece"],
+    price_range: "70k and above",
   },
   {
     product_name: "Bella Chair and Table",
@@ -154,8 +179,10 @@ const products: IProducts[] = [
     sizes_available: ["L", "XL", "XS"],
     image:
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285232/Bella_chair_and_table_1_cm0o4d.png",
-      id: 12,
+    id: 12,
     category: "Table",
+      tags: ["table set", "chair", "chic", "functional", "dining area"],
+    price_range: "70k and above",
   },
   {
     product_name: "Granite Square Side Table",
@@ -166,8 +193,10 @@ const products: IProducts[] = [
     sizes_available: ["L", "XL", "XS"],
     image:
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285260/Granite_square_side_table_1_kgyc6v.png",
-      id: 13,
+    id: 13,
     category: "Table",
+      tags: ["side table", "granite", "square", "luxury", "living room"],
+    price_range: "70k and above",
   },
   {
     product_name: "Asgaard Sofa",
@@ -178,8 +207,10 @@ const products: IProducts[] = [
     sizes_available: ["L", "XL", "XS"],
     image:
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285344/Asgaard_sofa_2_ncg4dz.png",
-      id: 14,
+    id: 14,
     category: "Sofa",
+      tags: ["sofa", "modern", "Scandinavian", "elegant", "comfortable"],
+    price_range: "70k and above",
   },
   {
     product_name: "Maya Sofa Three Seater",
@@ -190,8 +221,10 @@ const products: IProducts[] = [
     sizes_available: ["L", "XL", "XS"],
     image:
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285373/Maya_sofa_three_seater_1_kxa7xj.png",
-      id: 15,
+    id: 15,
     category: "Sofa",
+      tags: ["sofa", "three-seater", "plush", "spacious", "family-friendly"],
+    price_range: "70k and above",
   },
   {
     product_name: "Outdoor Sofa Set",
@@ -202,8 +235,10 @@ const products: IProducts[] = [
     sizes_available: ["L", "XL", "XS"],
     image:
       "https://res.cloudinary.com/dqc4xmj4g/image/upload/v1736285405/Outdoor_sofa_set_1_g5zrfb.png",
-      id: 16,
+    id: 16,
     category: "Sofa",
+      tags: ["sofa set", "outdoor", "weather-resistant", "stylish", "relaxation"],
+    price_range: "70k and above",
   },
 ];
 
